@@ -1,0 +1,25 @@
+<html>
+<script>
+    let numero1 = parseFloat(prompt('Digite o primeiro numero'));
+    let numero2 = parseFloat(prompt('Digite o segundo numero'));
+    let numero3 = parseFloat(prompt('Digite o terceiro numero'));
+
+    if (numero1 > numero2) {
+        auxiliar = numero1;
+        numero1 = numero2;
+        numero2 = auxiliar;
+    }
+    if (numero2 > numero3) {
+        auxiliar = valor2;
+        numero2 = numero3;
+        numero3 = auxiliar;
+    }
+    if (numero1 > numero2) {
+        auxiliar = numero1;
+        numero1 = numero2;
+        numero2 = auxiliar;
+    }
+    alert(numero1 + '<' + numero2 + '<' + numero3);
+</script>
+
+</html>
