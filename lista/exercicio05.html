@@ -1,0 +1,28 @@
+<html>
+<meta charset="utf-8">
+<script>       
+    let par = [];
+    let impar = [];
+    let numero = [];
+    let a = 0;
+    let b = 0;
+    for (let i = 0; i < 5; i++) {
+        let numero_valido = false;
+        do {
+            numero[i] = parseInt(prompt('Informe o número ' + (i + 1)));
+            numero_valido = (!isNaN(numero[i]));
+        } while (!numero_valido);
+
+        if (numero[i] % 2 == 0) {           
+            par[a] = numero[i];
+            a++;
+        }
+        else {           
+            impar[b] = numero[i];
+            b++;
+        }
+    }
+    alert('Números digitados: ' + numero + '\nPar > ' + par + '\nÍmpar > ' + impar);
+</script>
+
+</html>

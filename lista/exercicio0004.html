@@ -1,0 +1,16 @@
+<html>
+<script>
+    let letras = new Array(10);
+    let consoantes = [];
+    for (let i = 0; i < letras.length; i++) {
+        letras[i] = prompt('Digite a ' + (1 + i) + ' letra');
+        let item = letras[i];
+        if (item != 'a' && item != 'e' && item != 'i' && item != 'o' && item != 'u') {
+            consoantes.push(item);
+        }
+    }
+    alert('Quantidade: ' + consoantes.length);
+    alert('Consoantes ' + consoantes);
+</script>
+
+</html>
